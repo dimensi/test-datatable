@@ -1,0 +1,26 @@
+.button
+	display inline-block
+	padding 8px 16px
+	border 1px solid
+	text-align center
+	vertical-align middle
+	white-space nowrap
+	line-height 1.25
+	user-select none
+	border-radius em(4)
+	font-size 16px
+	font-weight 500
+	transition 0.3s
+	background transparent
+	cursor pointer
+	&--color_gold
+		color $gold
+		&:hover
+			background-color $gold
+			color $dark-purple
+	&--size_big
+		font-size 20px
+		padding 16px 32px
+		+below('l')
+			font-size 18px
+			padding 14px 30px

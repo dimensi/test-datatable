@@ -1,0 +1,60 @@
+.datatable
+	display block
+	width 100%
+	&__table
+		width 100%
+		border-collapse collapse
+		border-top 1px solid #eceeef
+		thead
+			border-bottom 2px solid #eceeef
+			th
+				cursor pointer
+				&:after
+					display inline-block
+					margin-left 3px
+		th
+		td
+			text-align left
+			padding 12px
+		tr
+			border-bottom 1px solid #eceeef
+		input
+			appearance none
+			border 1px solid $black
+			padding 5px 10px
+	&__th
+		cursor pointer
+		&:after
+			content '\2194'
+			display inline-block
+			margin-left 3px
+			transform rotate(90deg)
+		&--up:after
+			content '\2191'
+			transform rotate(0)
+		&--down:after
+			content '\2193'
+			transform rotate(0)
+	&__nav
+		margin 10px 0 10px
+		@extend $row
+		@extend $vertical-align-middle
+		ul
+			@extend $row
+			@extend $justify-right
+			margin 0 0 0 auto
+			list-style none
+			> li > button
+				border 1px solid $black
+				background-color $light-grey
+				margin-left -1px
+				font-size 18px
+				padding 6px 12px
+				cursor pointer
+				&:hover
+					background-color $light-grey - 10%
+		.button
+			margin-right 10px
+	&__form
+		button
+			display none

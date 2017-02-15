@@ -1,0 +1,40 @@
+.json-code
+	display block
+	width 100%
+	&__modal
+		display none
+		position fixed
+		top 0
+		left 0
+		right 0
+		bottom 0
+		margin auto
+		background-color white
+		max-width 600px
+		height 400px
+		border-radius 5px
+		padding 20px
+		border 1px solid rgba(0,0,0,.2)
+		color $black
+		z-index 10
+		code
+			background $light-grey
+			overflow-y scroll
+			display block
+			height 80%
+		&--open
+			display block
+	&__title
+		font-size 24px
+		font-weight 500
+		margin 0 0 20px
+	&__close-modal
+		position absolute
+		top 5px
+		right 5px
+		border none
+		border-radius 3px
+		background-color transparent
+		padding 5px
+		cursor pointer
+		font-weight bold

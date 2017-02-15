@@ -1,0 +1,15 @@
+include ../button/button
+mixin datatable()
+	+b.datatable&attributes(attributes)
+		+e('form').form#datatable
+			button
+		+e('table').table
+			thead
+				tr
+					+e('th').th(data-id="id") ID
+					+e('th').th(data-id="title") Название
+					+e('th').th(data-id="amount") Количество
+					+e('th').th(data-id="cost") Цена за единицу
+		+e.nav
+			+button.json-code__button(type="button") Показать json
+			+button.datatable__button-addRow(type="button") Добавить ряд

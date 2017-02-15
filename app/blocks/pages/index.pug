@@ -1,0 +1,37 @@
+include ../nav/nav
+include ../header/header
+include ../main/main
+include ../footer/footer
+include ../container/container
+include ../datatable/datatable
+include ../json-code/json-code
+mixin index()
+	+nav(getData('menu'))
+	+header
+	+main
+		+container
+			h1 Lorem ipsum dolor.
+			+e.subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima excepturi magni sequi.
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptate rem unde necessitatibus esse qui nesciunt laboriosam deserunt, nam architecto. Omnis saepe porro assumenda ipsam iure non ad placeat consequuntur?
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sed ut illum commodi repellendus et asperiores, dolorem dolor voluptatem ad. Nihil dolores dolor rerum ducimus iste nemo harum neque, reiciendis!
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi inventore quis aliquid voluptatum facere! Quaerat veritatis officia porro delectus adipisci perspiciatis dolores obcaecati placeat. Eum corporis nobis perferendis, minima, odio culpa architecto odit ut eaque, illum suscipit pariatur ipsam, porro ex cum atque fuga. Perspiciatis recusandae sit quam doloremque quod enim obcaecati nisi iusto consectetur ratione a, illo impedit harum velit blanditiis! Rerum praesentium ad earum recusandae perspiciatis porro pariatur illum, numquam ducimus totam deserunt eligendi cumque animi modi tempore distinctio, quibusdam sed harum accusantium fuga magnam? Accusamus inventore eius officiis dolorem quod nisi repellat eligendi dolore quos nemo sequi aut sunt porro eaque, corporis, aliquam fuga laboriosam sed. Illum, magnam. Distinctio fugiat dolor ipsum, quia earum ea nobis facilis. Veniam, deserunt eaque neque porro asperiores voluptas provident ipsam non natus alias temporibus nobis suscipit, fugit praesentium a, ratione officia laboriosam. Quasi temporibus, veritatis architecto vero, rerum, libero odit itaque doloremque alias pariatur maiores, dignissimos fuga blanditiis. Fugit nihil quod aspernatur excepturi ut omnis, mollitia impedit illo, aliquid. Ad iure sapiente repellat dolores officiis earum odio sequi facere doloribus ex illo excepturi similique reprehenderit cum quasi tempore explicabo mollitia eveniet optio, quidem, fugiat. Fuga maiores, sed repudiandae consequatur molestias accusantium?
+			+datatable
+			//+e.table
+			//table(width="100%")
+				thead
+					tr
+						th#id ID
+						th#title Название
+						th#amount Количество
+						th#cost Цена за единицу
+			//.nav-table(style="width: 100%;")
+			//- form.table-form(name="form")
+				input(type="number" name="id")
+				input(type="text" name="title")
+				input(type="number" name="amount")
+				input(type="number" name="cost" step="0.1")
+				button Отправить
+			//.jsonCode
+				button.showCode(type="button") Показать json
+	+footer
+	+json-code

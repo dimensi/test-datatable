@@ -1,0 +1,11 @@
+include ../container/container
+include ../logo/logo
+include ../m-button/m-button
+mixin nav(menu)
+	+b('nav').nav&attributes(attributes)
+		+container.nav__container
+			+m-button
+			+logo(href="#").nav__logo Bootstrap
+			+e('ul').menu
+				each item in menu
+					+e.link(href="#" class={"--active": item.active})=item.title

@@ -1,0 +1,11 @@
+include ../container/container
+mixin footer()
+	+b.footer&attributes(attributes)
+		+container
+			+e('ul').menu
+				+e.link(href="#") GitHub
+				+e.link(href="#") Twitter
+				+e.link(href="#") Examples
+				+e.link(href="#") About
+			+e.text
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum distinctio veniam animi deleniti iusto esse voluptates iure accusantium consectetur fuga reprehenderit, quae perferendis ullam accusamus? Provident quod, necessitatibus dolorum. &copy; 2017

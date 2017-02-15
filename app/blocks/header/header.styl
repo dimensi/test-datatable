@@ -1,0 +1,43 @@
+.header
+	display block
+	background-image linear-gradient(135deg,#271b38,#563d7c,#7952b3)
+	padding 128px 0 64px
+	+below('l')
+		padding (128px - 30%) 0 (64px - 30%)
+	+below('m')
+		display none
+	&__logo
+		text-align center
+		width 100%
+		margin-bottom 32px
+		color white
+		span
+			size 144px
+			font-size 108px
+			vertical-align middle
+			border-radius 15%
+			border 1px solid
+			display inline-block
+			+below('l')
+				size (144px - 30%)
+				font-size (108px - 30%)
+	&__text
+		text-align center
+		color white
+		font-size 32px
+		font-weight 300
+		line-height 1.4
+		+below('l')
+			font-size (32px - 30%)
+		p
+			width 85%
+			margin 0 auto 32px
+			+below('l')
+				margin 0 auto (32px - 30%)
+		& ^[-1]__version
+			margin -16px auto 32px
+			+below('l')
+				margin -(16px - 30%) auto (32px - 30%)
+	&__version
+		font-size 16px
+		color #cdbfe3

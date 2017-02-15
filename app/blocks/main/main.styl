@@ -1,0 +1,32 @@
+.main
+	display block
+	padding 96px 0
+	+below('l')
+		padding (96 - 30%)px 0
+	+below('m')
+		padding 30px 0
+	h1
+		text-align center
+		width 100%
+		font-size 32px
+		margin 0
+		margin-bottom 16px
+		font-weight 500
+		color $black
+		+below('s')
+			font-size 26px
+	&__subtitle
+		font-weight 300
+		font-size 28px
+		max-width 80%
+		text-align center
+		margin 0 auto 32px
+		+below('s')
+			font-size 18px
+			max-width 100%
+			margin-bottom 24px
+	p
+		font-size 16px
+		margin-bottom 32px
+		+below('s')
+			margin-bottom 20px

@@ -1,0 +1,7 @@
+extends ../blocks/layout-default/layout-default
+include ../blocks/pages/index
+prepend head
+	title Bootstrap page
+block content
+	+index
+	+scripts(['app.js'])

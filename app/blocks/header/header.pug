@@ -1,0 +1,12 @@
+include ../container/container
+include ../button/button
+mixin header()
+	+b.header&attributes(attributes)
+		+container
+			+e.logo
+				span B
+			+e.text
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eligendi deleniti cupiditate debitis esse, blanditiis!
+				p
+					+button.--color_gold.--size_big(href="#") Enter the World
+				+e('p').version Currently v1.0

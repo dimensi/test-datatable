@@ -1,0 +1,14 @@
+[
+	{
+		"active": true,
+		"title": "Главная"
+	},
+	{
+		"active": false,
+		"title": "О нас"
+	},
+	{
+		"active": false,
+		"title": "Документация"
+	}
+]
